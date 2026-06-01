@@ -7,13 +7,9 @@
     "hash": "5dedfaf900ca3b37be9328e871ee0192c67761148b89570ab115c8dad1a71a1b",
     "installer": {
         "script": [
-            "Start-Process -FilePath \"$dir\\Recordly-windows-x64.exe\" -ArgumentList '/S' -Wait",
-            "if (Test-Path \"$env:LOCALAPPDATA\\Programs\\recordly\\Recordly.exe\") {",
-            "    New-Item -ItemType SymbolicLink -Path \"$dir\\Recordly.exe\" -Target \"$env:LOCALAPPDATA\\Programs\\recordly\\Recordly.exe\" -Force | Out-Null",
-            "}"
+            "Start-Process -FilePath \"$dir\\Recordly-windows-x64.exe\" -ArgumentList '/S' -Wait"
         ]
     },
-    "bin": "Recordly.exe",
     "uninstaller": {
         "script": [
             "$uninstallPath = \"$env:LOCALAPPDATA\\Programs\\recordly\\Uninstall Recordly.exe\"",

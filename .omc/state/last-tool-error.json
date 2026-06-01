@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"powershell.exe -Command \\\"rmux --version\\\" 2>&1\",\"description\":\"Verify rmux installation\"}",
-  "error": "Exit code 1\nusage: rmux [-2CDlNuVv] [-c shell-command] [-f file] [-L socket-name]\n            [-S socket-path] [-T features] [command [flags]]",
-  "timestamp": "2026-06-01T02:12:49.132Z",
+  "tool_input_preview": "{\"command\":\"powershell.exe -NoProfile -Command 'Write-Host \\\"=== symlink ===\\\" ; Test-Path \\\"$env:USERPROFILE\\\\scoop\\\\apps\\\\recordly\\\\current\\\\Recordly.exe\\\" ; Write-Host \\\"=== shim ===\\\" ; Get-Comman...",
+  "error": "Exit code 1\n=== symlink ===\nFalse\r\n=== shim ===\n=== recordly cmd ===\nWARN  'recordly' not found, not a scoop shim, or a broken shim.",
+  "timestamp": "2026-06-01T03:02:06.775Z",
   "retry_count": 1
 }
